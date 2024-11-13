@@ -53,7 +53,9 @@ const Main = ({ theme, translation, withEmoji = true, onSelect = () => {}, ...pr
   return (
     <ThemeProvider theme={{ ...DEFAULT_THEME, ...theme }}>
       <CountryProvider value={{ ...DEFAULT_COUNTRY_CONTEXT, translation }}>
-        <CountryPicker {...props} />
+        <CountryPicker onSelect={function (): void {
+          throw new Error('Function not implemented.')
+        } } {...props} />
       </CountryProvider>
     </ThemeProvider>
   )

@@ -1,5 +1,17 @@
 Forked from: https://github.com/xcarpentier/react-native-country-picker-modal
 
+Built with:
+```bash
+  rm -rf lib/
+  npx tsc --noEmit false
+  cp -rf ./src/assets ./lib/assets
+  node ./scripts/minify.js ./lib/assets/data/countries-emoji.json 
+```
+
+
+----
+
+
 <h3>
   Country Picker for React Native.
 </h3>
